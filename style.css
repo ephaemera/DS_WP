@@ -1,0 +1,374 @@
+/*
+Theme Name: DStheme
+Theme URI: https://dedestolee.com
+Author: Dede Stolee
+Author URI: https://dedestolee.com
+Description: A text-based writer portfolio theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dstheme
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =========== Simple Reset ================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================ Body Styles ================ */
+
+body {
+    font-family: "Quattrocento Sans", sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bedini", "Didot", serif;
+    font-weight: bold;
+    color: #333;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #333;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.page, .page-single {
+    padding-top: 6rem;
+}
+
+/* ================== Navigation Styles ==================== */
+
+.navbar {
+    padding: 0 1rem;
+}
+.navbar-toggler {
+    border: 0;
+}
+.navbar-brand {
+    font-family: 'Dalmais', "Didot", serif;
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    color: #555;
+}
+nav.navbar-light {
+    background: #fff !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+}
+.nav-item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.active {
+    font-weight: bold;
+}
+.form-inline {
+    padding: 1.5rem 0;
+}
+.form-control {
+    border-radius: 0;
+}
+
+/* General Blog Styles */
+
+.entry-header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.entry-header-page {
+  text-align: center;
+  padding: 5.5rem 0;
+}
+
+@media (min-width: 576px) {
+.entry-archive h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+.category-label {
+    display: inline-block;
+    background: transparent;
+    padding: .35rem .75rem .25rem;
+    margin: .5rem;
+    font-size: .75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+}
+.category-label:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+.page img,
+.page-single img {
+    padding-bottom: 1rem;
+}
+.read-more,
+.read-more-excerpt, p.meta {
+    font-size: .75rem;
+    line-height: 1;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    padding: .75rem;
+}
+p.meta a:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+.read-more-excerpt {
+    padding: 0 0 0 .2rem;
+    text-transform: uppercase;
+}
+.read-more:hover,
+.read-more-excerpt:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+.jumbotron {
+    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat; url(../img/amy-reed-339261-unsplash.jpg) no-repeat; */
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url(../img/amy-reed-339261-unsplash.jpg) no-repeat;
+    padding: 8rem 2rem;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    border-bottom: 1px solid #efefff;
+    margin-bottom: 0;
+}
+
+.jumbotron.featured {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/bright-energy-idea-247753.jpg) no-repeat;
+  background-position: center center;
+}
+.jumbotron.archives {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/christa-dodoo-485704-unsplash.jpg) no-repeat;
+  background-position: center center;
+}
+.jumbotron.about {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron h1,
+.jumbotron h1 a {
+    color: #fff;
+}
+.jumbotron h1 a:hover {
+    color: #b59f5b;
+}
+.jumbotron a.category-label {
+    color: #b59f5b;
+}
+.jumbotron a.category-label:hover {
+    color: #fff;
+}
+.jumbotron a.read-more,
+.jumbotron .meta a {
+    color: #ccc;
+}
+.jumbotron a.read-more:hover {
+    color: #b59f5b;
+}
+.latest, .archive {
+    padding: 0 0 3rem;
+}
+.latest p, .archive p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.archive a {
+  color: #333;
+}
+
+.archive a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+article { /* adjust this for small breakpoints */
+    padding: 0 3rem 3rem;
+}
+p.drop-cap::first-letter {
+    float: left;
+    font-size: 78px;
+    line-height: .75; /* Reduced from lh=1 to adjust drop-cap between FF and GC */
+    font-family: "Bedini", serif;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-bottom: -6px;
+    margin-top: 11px; /* added to adjust drop-cap between FF and GC */
+}
+.blockquote {
+    font-family: "Bedini", "Didot", serif;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: .5rem 1rem;
+    margin: 2.5rem 0;
+    font-size: 1rem;
+}
+blockquote:before {
+    /* Adapted from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+    color: #333;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .2em;
+    margin-right: 0;
+    font-family: "Bedini", "Didot", serif;
+    font-weight: bold;
+    background: #fff;
+    //vertical-align: -0.4em;
+}
+.blockquote p {
+    margin-top: -1.25rem;
+}
+.post-nav {
+    //border-top: 1px solid #efefef;
+    //border-bottom: 1px solid #efefef;
+    padding: 1.5rem 0;
+}
+.post-nav a {
+    color: #333;
+    font-size: .75rem;
+    font-family: "Bedini", "Didot", serif;
+    font-weight: bold;
+    line-height: 1;
+}
+.post-nav a:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+
+//.nav-next:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-left: 0;
+    width: 13px;
+    text-align: center;
+}
+
+//.nav-prev:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-left: 0;
+    width: 13px;
+    //text-align: center;
+}
+
+.nav-next .next:before {
+    display: none;
+}
+
+.comment-form input, .comment-form-comment {
+  width: 100%;
+}
+
+/* ============== Widget Areas ================== */
+
+.collapse-widgets {
+    margin-left: -15px;
+    padding-bottom: 2rem;
+}
+footer {
+    padding: 1rem 0 0;
+}
+footer li,
+.collapse li {
+    list-style-type: none;
+    margin-bottom: .25rem;
+    font-size: 1rem;
+}
+footer a,
+.collapse a {
+    color: #111;
+}
+footer a:hover,
+.collapse a:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+.widget-tag-cloud a {
+    font-size: 1rem;
+    display: inline-block;
+    color: #111;
+    margin: .125rem;
+}
+.widget h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.social {
+    padding: .75rem .75rem .5rem;
+}
+.social li {
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.social a {
+    color: #111;
+    padding: .25rem;
+}
+.social a:hover {
+    color: #b59f5b;
+    text-decoration: none;
+}
+p.copyright {
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .5rem;
+    padding: .5rem;
+}
