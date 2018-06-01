@@ -12,7 +12,7 @@
     <div class="col-sm col-md-7">
       <div class="entry-header-excerpt">
         <?php the_excerpt(); ?>
-          <a href="single2.html" class="read-more-excerpt">Read More <i class="fas fa-angle-right"></i></a></p>
+          <p><a href="<?php the_permalink(); ?>" class="read-more-excerpt">Read More <i class="fas fa-angle-double-right"></i></a></p>
       </div>
     </div>
   </div>

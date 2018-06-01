@@ -6,12 +6,12 @@
     <div class="entry-header">
       <div class="row justify-content-sm-center">
         <div class="col-sm col-md-9">
-          <a href="#" class="category-label text-center">Being Geniuses Together</a>
+          <?php the_category(); ?>
           <h1><?php the_title(); ?></h1>
           <?php the_excerpt(); ?>
           <p class="meta">
-            <?php the_time('F j, Y'); ?>   
-          </a>
+            <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> :: <?php comments_number(); ?>
+            
           </p>
         </div>
       </div>

@@ -64,3 +64,6 @@
   }
 
   add_action('widgets_init', 'ds_init_widgets');
+
+  // Customizer File
+  require get_template_directory(). '/inc/customizer.php';

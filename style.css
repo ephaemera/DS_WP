@@ -103,7 +103,7 @@ nav.navbar-light {
     border-radius: 0;
 }
 
-/* General Blog Styles */
+/* ================ Blog Styles ================ */
 
 .entry-header {
     text-align: center;
@@ -131,7 +131,7 @@ nav.navbar-light {
   }
 }
 
-.category-label {
+.post-categories {
     display: inline-block;
     background: transparent;
     padding: .35rem .75rem .25rem;
@@ -140,10 +140,14 @@ nav.navbar-light {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #444;
+
 }
-.category-label:hover {
-    color: #b59f5b;
+
+.post-categories a {
+  color: #b59f5b;
+}
+.post-categories a:hover {
+    color: #fff;
     text-decoration: none;
 }
 .page img,
@@ -155,14 +159,12 @@ nav.navbar-light {
     font-size: .75rem;
     line-height: 1;
     color: #333;
-    font-weight: bold;
+    font-weight: normal;
     display: inline-block;
-    padding: .75rem;
+    text-transform: uppercase;
 }
 p.meta {
-  font-size: .5625rem;
-  font-weight: normal;
-  text-transform: uppercase;
+  padding-bottom: .25rem;
 }
 p.meta a:hover {
     color: #b59f5b;
@@ -224,8 +226,6 @@ p.meta a:hover {
 
 .jumbotron p {
   color: #ddd;
-  padding-top: .5rem;
-
 }
 .jumbotron a.read-more,
 .jumbotron .meta a {
@@ -422,6 +422,10 @@ p.top {
 
 p.top a {
   color: #444;
+}
+
+.comments {
+  padding-top: 2rem;
 }
 
 .comment-form-comment textarea {
