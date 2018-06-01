@@ -30,7 +30,8 @@
     </div>
   </div>
   <hr>
-  <p class="copyright text-center">Site and content &copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?> and Ephaemera Creative. All Rights Reserved.</p>
+  <p class="copyright text-center">Site and content &copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?> , Ephaemera Creative and Vision by Pixels. All Rights Reserved.</p>
+  <p class="top text-center"><a href="#top"><i class="fas fa-chevron-circle-up"></i></a></p>
 
 </footer>
 <?php wp_footer(); ?>

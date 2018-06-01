@@ -23,13 +23,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 hr {
   margin: 0 !important;
   padding: 0 !important;
+  border-top: 1px solid #efefef;
 }
 
 /* ================ Body Styles ================ */
 
 body {
     font-family: "Quattrocento Sans", sans-serif;
-    color: #333;
+    color: #444;
     font-size: 16px;
 }
 h1,
@@ -38,9 +39,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Bedini", "Didot", serif;
+    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
-    color: #333;
+    color: #444;
 }
 h1 a,
 h2 a,
@@ -48,7 +49,9 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #333;
+  font-family: "Bedini", "Didot", "Georgia", serif;
+  font-weight: bold;
+  color: #444;
 }
 h1 a:hover,
 h2 a:hover,
@@ -80,7 +83,7 @@ img {
     font-family: 'Dalmais', "Didot", serif;
     font-size: 2.5rem;
     letter-spacing: -5px;
-    color: #555;
+    color: #444;
 }
 nav.navbar-light {
     background: #fff !important;
@@ -106,6 +109,14 @@ nav.navbar-light {
     text-align: center;
     padding-top: 2rem;
 }
+.entry-header h1 {
+  font-size: 4rem;
+}
+.entry-header h1 a {
+  font-family: "Bedini", "Didot", "Georgia", serif;
+  font-weight: bold;
+  color: #444;
+}
 
 .entry-header-page {
   text-align: center;
@@ -129,7 +140,7 @@ nav.navbar-light {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #333;
+    color: #444;
 }
 .category-label:hover {
     color: #b59f5b;
@@ -149,8 +160,9 @@ nav.navbar-light {
     padding: .75rem;
 }
 p.meta {
-  color: #fff;
+  font-size: .5625rem;
   font-weight: normal;
+  text-transform: uppercase;
 }
 p.meta a:hover {
     color: #b59f5b;
@@ -165,7 +177,7 @@ p.meta a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
-.jumbotron {
+.jumbotron-fluid {
     /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat; url(../img/amy-reed-339261-unsplash.jpg) no-repeat; */
     background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
     url(../img/amy-reed-339261-unsplash.jpg) no-repeat;
@@ -209,6 +221,12 @@ p.meta a:hover {
 .jumbotron a.category-label:hover {
     color: #fff;
 }
+
+.jumbotron p {
+  color: #ddd;
+  padding-top: .5rem;
+
+}
 .jumbotron a.read-more,
 .jumbotron .meta a {
     color: #efefef;
@@ -227,7 +245,7 @@ p.meta a:hover {
 }
 
 .archive a {
-  color: #333;
+  color: #444;
 }
 
 .archive a:hover {
@@ -242,18 +260,18 @@ article { /* adjust this for small breakpoints */
     float: left;
     font-size: 78px;
     line-height: .75; /* Reduced from lh=1 to adjust drop-cap between FF and GC */
-    font-family: "Bedini", serif;
+    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
     margin-top: 11px; /* added to adjust drop-cap between FF and GC */
 }
 .entry p:first-child::first-line {
-  //font-family: "Bedini", serif;
+  //font-family: "Bedini", "Didot", "Georgia", serif;
   //font-weight: bold;
 }
 blockquote {
-    font-family: "Bedini", "Didot", serif;
+    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -264,12 +282,12 @@ blockquote {
 }
 blockquote:before {
     /* Adapted from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
-    color: #333;
+    color: #444;
     content: '\201c';
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
-    font-family: "Bedini", "Didot", serif;
+    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     background: #fff;
     //vertical-align: -0.4em;
@@ -283,9 +301,9 @@ blockquote p {
     padding: 1.5rem 0;
 }
 .post-nav a {
-    color: #333;
+    color: #444;
     font-size: .75rem;
-    font-family: "Bedini", "Didot", serif;
+    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     line-height: 1;
 }
@@ -345,7 +363,7 @@ footer li,
 }
 footer a,
 .collapse a {
-    color: #111;
+    color: #444;
 }
 footer a:hover,
 .collapse a:hover {
@@ -355,12 +373,12 @@ footer a:hover,
 .widget-tag-cloud a {
     font-size: 1rem;
     display: inline-block;
-    color: #111;
+    color: #444;
     margin: .125rem;
 }
 
 .footer-sidebar {
-  padding: 4rem;
+  padding: 4rem 4rem 3rem;
 }
 .sidebar-module {
   padding: 0 1rem;
@@ -382,7 +400,7 @@ footer a:hover,
     font-size: 1rem;
 }
 .social a {
-    color: #111;
+    color: #444;
     padding: .25rem;
 }
 .social a:hover {
@@ -390,20 +408,37 @@ footer a:hover,
     text-decoration: none;
 }
 p.copyright {
-    color: #aaa;
+    color: #444;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .5rem;
-    padding: 1.5rem 0 .5rem;
+    padding: 2.5rem 0 .5rem;
 }
 
-.comment-form-comment textarea{
+p.top {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+p.top a {
+  color: #444;
+}
+
+.comment-form-comment textarea {
   width: 100% !important;
   min-height: 200px;
   border-color: #ddd;
 }
+
+.comment-author img {
+  height: auto;
+}
 .comments li.comment {
   list-style-type: none;
+}
+
+.comments .reply a {
+  color: #b59f5b;
 }
 .form-submit .submit {
   text-transform: uppercase;
@@ -412,7 +447,7 @@ p.copyright {
 }
 
 input[type="submit" i] {
-  background-color: #333;
+  background-color: #444;
   color: #fff;
   font-family: "Quattrocento Sans", sans-serif;
   letter-spacing: 2px;
@@ -420,14 +455,4 @@ input[type="submit" i] {
 
 input[type="submit" i]:hover {
   color: #b59f5b;
-}
-
-select#archives-dropdown-10 {
-  select, input[type="color" i][list] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-width: 1px;
-
-}
 }

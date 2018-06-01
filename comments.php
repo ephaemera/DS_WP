@@ -10,7 +10,7 @@
 	'reply_text'        => 'Reply',
 	'page'              => '',
 	'per_page'          => '',
-	'avatar_size'       => 80,
+	'avatar_size'       => 40,
 	'reverse_top_level' => null,
 	'reverse_children'  => '',
 	'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
