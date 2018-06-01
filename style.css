@@ -20,6 +20,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding: 0;
 }
 
+hr {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 /* ================ Body Styles ================ */
 
 body {
@@ -61,6 +66,7 @@ img {
 .page, .page-single {
     padding-top: 6rem;
 }
+
 
 /* ================== Navigation Styles ==================== */
 
@@ -142,6 +148,10 @@ nav.navbar-light {
     display: inline-block;
     padding: .75rem;
 }
+p.meta {
+  color: #fff;
+  font-weight: normal;
+}
 p.meta a:hover {
     color: #b59f5b;
     text-decoration: none;
@@ -194,13 +204,15 @@ p.meta a:hover {
 }
 .jumbotron a.category-label {
     color: #b59f5b;
+    font-weight: normal;
 }
 .jumbotron a.category-label:hover {
     color: #fff;
 }
 .jumbotron a.read-more,
 .jumbotron .meta a {
-    color: #ccc;
+    color: #efefef;
+    font-weight: normal;
 }
 .jumbotron a.read-more:hover {
     color: #b59f5b;
@@ -226,7 +238,7 @@ p.meta a:hover {
 article { /* adjust this for small breakpoints */
     padding: 0 3rem 3rem;
 }
-p.drop-cap::first-letter {
+.drop-cap {
     float: left;
     font-size: 78px;
     line-height: .75; /* Reduced from lh=1 to adjust drop-cap between FF and GC */
@@ -236,7 +248,11 @@ p.drop-cap::first-letter {
     margin-bottom: -6px;
     margin-top: 11px; /* added to adjust drop-cap between FF and GC */
 }
-.blockquote {
+.entry p:first-child::first-line {
+  //font-family: "Bedini", serif;
+  //font-weight: bold;
+}
+blockquote {
     font-family: "Bedini", "Didot", serif;
     font-weight: bold;
     text-align: center;
@@ -249,7 +265,7 @@ p.drop-cap::first-letter {
 blockquote:before {
     /* Adapted from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
     color: #333;
-    content: open-quote;
+    content: '\201c';
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
@@ -258,7 +274,7 @@ blockquote:before {
     background: #fff;
     //vertical-align: -0.4em;
 }
-.blockquote p {
+blockquote p {
     margin-top: -1.25rem;
 }
 .post-nav {
@@ -342,12 +358,20 @@ footer a:hover,
     color: #111;
     margin: .125rem;
 }
-.widget h3 {
+
+.footer-sidebar {
+  padding: 4rem;
+}
+.sidebar-module {
+  padding: 0 1rem;
+}
+.sidebar-module h4 {
     font-family: "Quattrocento Sans", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 1.25rem;
 }
+
 .social {
     padding: .75rem .75rem .5rem;
 }
@@ -370,5 +394,40 @@ p.copyright {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .5rem;
-    padding: .5rem;
+    padding: 1.5rem 0 .5rem;
+}
+
+.comment-form-comment textarea{
+  width: 100% !important;
+  min-height: 200px;
+  border-color: #ddd;
+}
+.comments li.comment {
+  list-style-type: none;
+}
+.form-submit .submit {
+  text-transform: uppercase;
+  padding: 5px 0;
+  border-color: #ddd;
+}
+
+input[type="submit" i] {
+  background-color: #333;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+input[type="submit" i]:hover {
+  color: #b59f5b;
+}
+
+select#archives-dropdown-10 {
+  select, input[type="color" i][list] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-width: 1px;
+
+}
 }

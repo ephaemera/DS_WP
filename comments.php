@@ -1,5 +1,5 @@
 <div class="comments">
-<h2>Comments</h2>
+
 <?php $args = array(
 	'walker'            => null,
 	'max_depth'         => '',
@@ -29,7 +29,7 @@ $comments_args = array(
         // remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after' => '',
         // redefine your own textarea (the comment body)
-        'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+        'comment_field' => '<p class="comment-form-comment"><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 );
 
 comment_form($comments_args);

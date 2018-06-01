@@ -24,26 +24,12 @@
 
 
 <div class="page-single">
-  <div class="container">
+  <div class="container single">
 
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
+        <?php get_template_part('content', 'single'); ?>
 
-    <article class="entry">
-      <div class="row justify-content-sm-center">
-        <div class="col-sm col-md-9">
-          <?php the_content(); ?>
-          <?php comments_template(); ?>
-          <div class="row post-nav">
-            <div class="col-sm nav-prev"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nisi.</a></div>
-            <div class="col-sm text-right nav-next"><a href="">Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet </a></div>
-          </div>
-        </div>
-
-      </div>
-      <!-- row -->
-
-    </article>
   <?php endwhile; ?>
   <?php else : ?>
     <p><?php __('No Posts Found'); ?></p>

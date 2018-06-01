@@ -1,15 +1,31 @@
 <footer>
-  <div class="container widget">
+  <div class="container-fluid sharing">
     <div class="row justify-content-sm-center">
       <div class="col-sm col-md-4 text-center">
-        <h3>Title</h3>
-        <ul class="social text-center">
-          <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-          <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="" id="" title="Back to top"><i class="fas fa-chevron-circle-up"></i></a></li>
-          <li><a href=""><i class="fab fa-github"></i></a></li>
-          <li><a href=""><i class="fas fa-envelope"></i></a></li>
-        </ul>
+        <?php if(is_active_sidebar('sharing-sidebar1')): ?>
+          <?php dynamic_sidebar('sharing-sidebar1'); ?>
+          <?php endif; ?>
+      </div>
+    </div>
+  </div>
+    <hr>
+
+  <div class="container footer-sidebar">
+    <div class="row justify-content-sm-center">
+      <div class="col-sm col-md-4 text-right">
+        <?php if(is_active_sidebar('sidebar1')): ?>
+          <?php dynamic_sidebar('sidebar1'); ?>
+          <?php endif; ?>
+      </div>
+      <div class="col-sm col-md-4 center text-center">
+        <?php if(is_active_sidebar('sidebar2')): ?>
+          <?php dynamic_sidebar('sidebar2'); ?>
+          <?php endif; ?>
+      </div>
+      <div class="col-sm col-md-4 text-left">
+        <?php if(is_active_sidebar('sidebar3')): ?>
+          <?php dynamic_sidebar('sidebar3'); ?>
+          <?php endif; ?>
       </div>
     </div>
   </div>
@@ -19,7 +35,6 @@
 </footer>
 <?php wp_footer(); ?>
 
-</div>
 </div>
 
 <!-- page -->
