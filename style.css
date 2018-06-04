@@ -25,7 +25,11 @@ hr {
     padding: 0 !important;
     border-top: 1px solid #efefef;
 }
-
+.jumbotron, .jumbotron-fluid {
+  background-color: none !important;
+  background-color: transparent !important;
+  //padding: 0 !important;
+}
 
 /* ================ Body Styles ================ */
 
@@ -68,9 +72,11 @@ img {
 }
 .page,
 .page-single {
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
-
+.jumbotron, .jumbotron-fluid {
+  //padding: 0 !important;
+}
 /* ================== Navigation Styles ==================== */
 
 .navbar {
@@ -108,8 +114,10 @@ nav.navbar-light {
 .entry-header {
     text-align: center;
     padding-top: 2rem;
-    //position: absolute;
-    //bottom: 150px;
+}
+
+.single .entry-header {
+  padding-top: 5rem;
 }
 .entry-header h1 {
     font-size: 4rem;
@@ -148,6 +156,9 @@ nav.navbar-light {
 .post-categories a {
     color: #b59f5b;
 }
+.single .post-categories a:hover {
+  color: #333;
+}
 .post-categories a:hover {
     color: #fff;
     text-decoration: none;
@@ -169,8 +180,12 @@ p.meta {
 p.meta {
     padding-bottom: .25rem;
 }
+p.meta a {
+  color: #b59f5b;
+}
+
 p.meta a:hover {
-    color: #b59f5b;
+    color: #333;
     text-decoration: none;
 }
 .read-more-excerpt {}
@@ -179,23 +194,23 @@ p.meta a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
-.jumbotron-fluid {
-    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat; url(../img/amy-reed-339261-unsplash.jpg) no-repeat; */
-    background: url(img/bright-energy-idea-247753.jpg) no-repeat;
-    padding: 8rem 2rem;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-    border-bottom: 1px solid #efefff;
-    margin-bottom: 0;
-    position: relative;
+
+.jumbotron-fluid, .jumbotron {
+  padding: 8rem 2rem;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #efefff;
+  margin-bottom: 0;
+  position: relative;
 }
+
 
 .jumbotron-fluid.archive {
   background: url(img/christa-dodoo-485704-unsplash.jpg) no-repeat;
-  padding: 8rem 2rem;
+  padding: 12rem 2rem;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

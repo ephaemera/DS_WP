@@ -14,13 +14,33 @@
 
     // Add Featured Image support
     add_theme_support('post-thumbnails');
-    add_image_size('banner-image', 3000, 1000, true);
+    add_image_size('banner-image', 500, auto, true);
   }
+
+  // Add custom background support
+    add_theme_support( 'custom-background' );
+
+    $defaults = array(
+  	'default-color'          => '',
+  	'default-image'          => '',
+  	'default-repeat'         => 'no-repeat',
+  	'default-position-x'     => 'center',
+          'default-position-y'     => 'center',
+          'default-size'           => 'auto',
+  	'default-attachment'     => 'scroll',
+  	'wp-head-callback'       => '_custom_background_cb',
+  	'admin-head-callback'    => '',
+  	'admin-preview-callback' => ''
+  );
+  add_theme_support( 'custom-background', $defaults );
+
+  add_theme_support( 'custom-header' );
+
 
   add_action('after_setup_theme', 'ds_theme_setup');
 
 
-  //Excerpt Lenght Control
+  //Excerpt Length Control
   function set_excerpt_length(){
     return 45;
   }

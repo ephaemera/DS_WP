@@ -15,9 +15,22 @@
     </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <?php wp_head(); ?>
+
+    <style>
+
+    .jumbotron {
+      background: url(<?php echo get_theme_mod('jumbotron_image', get_bloginfo('template_url').'/img/jumbotron.jpg'); ?>);
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-position: center center;
+    }
+
+    </style>
 </head>
 
-<body id="top">
+<body class=id="top">
     <nav class="navbar navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">dS</a>
