@@ -13,18 +13,19 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
 /* =========== Simple Reset ================== */
 
 * {
     margin: 0;
     padding: 0;
 }
-
 hr {
-  margin: 0 !important;
-  padding: 0 !important;
-  border-top: 1px solid #efefef;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top: 1px solid #efefef;
 }
+
 
 /* ================ Body Styles ================ */
 
@@ -49,9 +50,9 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  font-family: "Bedini", "Didot", "Georgia", serif;
-  font-weight: bold;
-  color: #444;
+    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-weight: bold;
+    color: #444;
 }
 h1 a:hover,
 h2 a:hover,
@@ -65,11 +66,10 @@ h6 a:hover {
 img {
     max-width: 100%;
 }
-
-.page, .page-single {
+.page,
+.page-single {
     padding-top: 6rem;
 }
-
 
 /* ================== Navigation Styles ==================== */
 
@@ -108,29 +108,32 @@ nav.navbar-light {
 .entry-header {
     text-align: center;
     padding-top: 2rem;
+    //position: absolute;
+    //bottom: 150px;
 }
 .entry-header h1 {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 .entry-header h1 a {
-  font-family: "Bedini", "Didot", "Georgia", serif;
-  font-weight: bold;
-  color: #444;
+    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-weight: bold;
+    color: #444;
 }
-
 .entry-header-page {
-  text-align: center;
-  padding: 5.5rem 0;
+    text-align: center;
+    padding: 5.5rem 0;
 }
-
+.entry-header-excerpt p {
+    /* chECK THIS */
+    margin-bottom: .5rem;
+}
 @media (min-width: 576px) {
-.entry-archive h2 {
-    font-size: 1.25rem;
-    margin: 0;
-    text-align: right;
-  }
+    .entry-archive h2 {
+        font-size: 1.25rem;
+        margin: 0;
+        text-align: right;
+    }
 }
-
 .post-categories {
     display: inline-block;
     background: transparent;
@@ -140,11 +143,10 @@ nav.navbar-light {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-
+    list-style-type: none;
 }
-
 .post-categories a {
-  color: #b59f5b;
+    color: #b59f5b;
 }
 .post-categories a:hover {
     color: #fff;
@@ -155,25 +157,23 @@ nav.navbar-light {
     padding-bottom: 1rem;
 }
 .read-more,
-.read-more-excerpt, p.meta {
+.read-more-excerpt,
+p.meta {
     font-size: .75rem;
     line-height: 1;
     color: #333;
-    font-weight: normal;
+    font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
 }
 p.meta {
-  padding-bottom: .25rem;
+    padding-bottom: .25rem;
 }
 p.meta a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
-.read-more-excerpt {
-    padding: 0 0 0 .2rem;
-    text-transform: uppercase;
-}
+.read-more-excerpt {}
 .read-more:hover,
 .read-more-excerpt:hover {
     color: #b59f5b;
@@ -181,8 +181,7 @@ p.meta a:hover {
 }
 .jumbotron-fluid {
     /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat; url(../img/amy-reed-339261-unsplash.jpg) no-repeat; */
-    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url(../img/amy-reed-339261-unsplash.jpg) no-repeat;
+    background: url(img/bright-energy-idea-247753.jpg) no-repeat;
     padding: 8rem 2rem;
     background-size: cover;
     -webkit-background-size: cover;
@@ -191,24 +190,33 @@ p.meta a:hover {
     background-position: center center;
     border-bottom: 1px solid #efefff;
     margin-bottom: 0;
+    position: relative;
 }
 
-.jumbotron.featured {
-  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-  url(../img/bright-energy-idea-247753.jpg) no-repeat;
-  background-position: center center;
-}
-.jumbotron.archives {
-  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-  url(../img/christa-dodoo-485704-unsplash.jpg) no-repeat;
-  background-position: center center;
-}
-.jumbotron.about {
-  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-  url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat;
-  background-position: center;
+.jumbotron-fluid.archive {
+  background: url(img/christa-dodoo-485704-unsplash.jpg) no-repeat;
+  padding: 8rem 2rem;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #efefff;
+  margin-bottom: 0;
+  position: relative;
 }
+
+.jumbotron:before {
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 21, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
 .jumbotron h1,
 .jumbotron h1 a {
     color: #fff;
@@ -223,9 +231,8 @@ p.meta a:hover {
 .jumbotron a.category-label:hover {
     color: #fff;
 }
-
 .jumbotron p {
-  color: #ddd;
+    color: #ddd;
 }
 .jumbotron a.read-more,
 .jumbotron .meta a {
@@ -235,40 +242,42 @@ p.meta a:hover {
 .jumbotron a.read-more:hover {
     color: #b59f5b;
 }
-.latest, .archive {
+.latest,
+.archive {
     padding: 0 0 3rem;
 }
-.latest p, .archive p {
+.latest p,
+.archive p {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .archive a {
-  color: #444;
+    color: #444;
 }
-
 .archive a:hover {
-  color: #b59f5b;
-  text-decoration: none;
+    color: #b59f5b;
+    text-decoration: none;
 }
-
-article { /* adjust this for small breakpoints */
+article {
+    /* adjust this for small breakpoints */
     padding: 0 3rem 3rem;
 }
 .drop-cap {
     float: left;
     font-size: 78px;
-    line-height: .75; /* Reduced from lh=1 to adjust drop-cap between FF and GC */
+    line-height: .75;
+    /* Reduced from lh=1 to adjust drop-cap between FF and GC */
     font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
-    margin-top: 11px; /* added to adjust drop-cap between FF and GC */
+    margin-top: 11px;
+    /* added to adjust drop-cap between FF and GC */
 }
 .entry p:first-child::first-line {
-  //font-family: "Bedini", "Didot", "Georgia", serif;
-  //font-weight: bold;
+    //font-family: "Bedini", "Didot", "Georgia", serif;
+    //font-weight: bold;
 }
 blockquote {
     font-family: "Bedini", "Didot", "Georgia", serif;
@@ -296,8 +305,6 @@ blockquote p {
     margin-top: -1.25rem;
 }
 .post-nav {
-    //border-top: 1px solid #efefef;
-    //border-bottom: 1px solid #efefef;
     padding: 1.5rem 0;
 }
 .post-nav a {
@@ -306,44 +313,27 @@ blockquote p {
     font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
     line-height: 1;
+    padding: 0 .25rem;
 }
 .post-nav a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
-
-//.nav-next:after {
-    content: "\f105";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    position: relative;
-    margin-left: 0;
-    width: 13px;
-    text-align: center;
+.comment-form input,
+.comment-form-comment {
+    width: 100%;
 }
-
-//.nav-prev:before {
-    content: "\f104";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    position: relative;
-    margin-left: 0;
-    width: 13px;
-    //text-align: center;
+.paginate {
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    padding: 2rem;
 }
-
-.nav-next .next:before {
-    display: none;
-}
-
-.comment-form input, .comment-form-comment {
-  width: 100%;
+.paginate a {
+    padding: 0 .125rem;
+    text-decoration: none;
+    color: #444;
+    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-weight: bold;
 }
 
 /* ============== Widget Areas ================== */
@@ -376,22 +366,14 @@ footer a:hover,
     color: #444;
     margin: .125rem;
 }
-
 .footer-sidebar {
-  padding: 4rem 4rem 3rem;
+    padding: 4rem 4rem 3rem;
 }
 .sidebar-module {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
-.sidebar-module h4 {
-    font-family: "Quattrocento Sans", sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-}
-
 .social {
-    padding: .75rem .75rem .5rem;
+    padding: 0;
 }
 .social li {
     display: inline;
@@ -401,7 +383,7 @@ footer a:hover,
 }
 .social a {
     color: #444;
-    padding: .25rem;
+    padding: 0 .25rem;
 }
 .social a:hover {
     color: #b59f5b;
@@ -412,51 +394,44 @@ p.copyright {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .5rem;
-    padding: 2.5rem 0 .5rem;
+    padding: .5rem 0;
 }
-
 p.top {
     font-size: 1.5rem;
-    padding: 0;
+    padding: 1rem 0 0;
+    border-top: 1px dotted #ddd;
 }
-
 p.top a {
-  color: #444;
+    color: #444;
 }
-
 .comments {
-  padding-top: 2rem;
+    padding-top: 2rem;
 }
-
 .comment-form-comment textarea {
-  width: 100% !important;
-  min-height: 200px;
-  border-color: #ddd;
+    width: 100% !important;
+    min-height: 200px;
+    border-color: #ddd;
 }
-
 .comment-author img {
-  height: auto;
+    height: auto;
 }
 .comments li.comment {
-  list-style-type: none;
+    list-style-type: none;
 }
-
 .comments .reply a {
-  color: #b59f5b;
+    color: #b59f5b;
 }
 .form-submit .submit {
-  text-transform: uppercase;
-  padding: 5px 0;
-  border-color: #ddd;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-color: #ddd;
 }
-
 input[type="submit" i] {
-  background-color: #444;
-  color: #fff;
-  font-family: "Quattrocento Sans", sans-serif;
-  letter-spacing: 2px;
+    background-color: #444;
+    color: #fff;
+    font-family: "Quattrocento Sans", sans-serif;
+    letter-spacing: 2px;
 }
-
 input[type="submit" i]:hover {
-  color: #b59f5b;
+    color: #b59f5b;
 }

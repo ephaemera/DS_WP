@@ -2,6 +2,9 @@
 
 
 <div class="jumbotron jumbotron-fluid">
+
+  <?php if (function_exists('z_taxonomy_image')) z_taxonomy_image(); ?>
+
   <div class="container">
     <div class="entry-header">
       <div class="row justify-content-sm-center">
@@ -11,7 +14,6 @@
           <?php the_excerpt(); ?>
           <p class="meta">
             <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> :: <?php comments_number(); ?>
-            
           </p>
         </div>
       </div>
@@ -29,6 +31,11 @@
       <?php while(have_posts()) : the_post(); ?>
         <?php get_template_part('content', 'single'); ?>
 
+        <div class="row post-nav">
+          <div class="col-sm text-right nav-prev"><?php previous_post_link(); ?></div>
+          <div class="col-sm text-left nav-next"><?php next_post_link(); ?></div>
+        </div>
+
   <?php endwhile; ?>
   <?php else : ?>
     <p><?php __('No Posts Found'); ?></p>
@@ -37,7 +44,7 @@
   </div>
   <!-- container -->
 
-  <hr>
+  <!-- <hr> -->
 
 
     <div class="container-fluid">

@@ -11,6 +11,10 @@
 
     // Post formats
     add_theme_support('post-formats', array('image', 'gallery', 'aside'));
+
+    // Add Featured Image support
+    add_theme_support('post-thumbnails');
+    add_image_size('banner-image', 3000, 1000, true);
   }
 
   add_action('after_setup_theme', 'ds_theme_setup');
