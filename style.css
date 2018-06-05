@@ -20,15 +20,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin: 0;
     padding: 0;
 }
-hr {
-    margin: 0 !important;
-    padding: 0 !important;
-    border-top: 1px solid #efefef;
-}
+
 .jumbotron, .jumbotron-fluid {
-  background-color: none !important;
   background-color: transparent !important;
-  //padding: 0 !important;
 }
 
 /* ================ Body Styles ================ */
@@ -44,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     color: #444;
 }
@@ -54,7 +48,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     color: #444;
 }
@@ -74,9 +68,6 @@ img {
 .page-single {
     padding-top: 3rem;
 }
-.jumbotron, .jumbotron-fluid {
-  //padding: 0 !important;
-}
 /* ================== Navigation Styles ==================== */
 
 .navbar {
@@ -91,8 +82,8 @@ img {
     letter-spacing: -5px;
     color: #444;
 }
-nav.navbar-light {
-    background: #fff !important;
+.bg-dark {
+    background-color: #222 !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, .05);
 }
 .nav-item {
@@ -115,29 +106,30 @@ nav.navbar-light {
     text-align: center;
     padding-top: 2rem;
 }
-
 .single .entry-header {
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 .entry-header h1 {
     font-size: 4rem;
-}
-.entry-header h1 a {
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
+}
+
+.single .entry-header h1 {
+  font-size: 3rem;
+}
+
+.entry-header h1 a {
     color: #444;
 }
-.entry-header-page {
-    text-align: center;
-    padding: 5.5rem 0;
-}
+
 .entry-header-excerpt p {
-    /* chECK THIS */
     margin-bottom: .5rem;
 }
+
 @media (min-width: 576px) {
     .entry-archive h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin: 0;
         text-align: right;
     }
@@ -145,7 +137,7 @@ nav.navbar-light {
 .post-categories {
     display: inline-block;
     background: transparent;
-    padding: .35rem .75rem .25rem;
+    padding: .35rem .75rem 0;
     margin: .5rem;
     font-size: .75rem;
     font-weight: bold;
@@ -175,7 +167,6 @@ p.meta {
     color: #333;
     font-weight: bold;
     display: inline-block;
-    text-transform: uppercase;
 }
 p.meta {
     padding-bottom: .25rem;
@@ -188,7 +179,6 @@ p.meta a:hover {
     color: #333;
     text-decoration: none;
 }
-.read-more-excerpt {}
 .read-more:hover,
 .read-more-excerpt:hover {
     color: #b59f5b;
@@ -210,7 +200,7 @@ p.meta a:hover {
 
 .jumbotron-fluid.archive {
   background: url(img/christa-dodoo-485704-unsplash.jpg) no-repeat;
-  padding: 12rem 2rem;
+  padding: 8rem 2rem;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -235,6 +225,7 @@ p.meta a:hover {
 .jumbotron h1,
 .jumbotron h1 a {
     color: #fff;
+    padding-bottom: .5rem;
 }
 .jumbotron h1 a:hover {
     color: #b59f5b;
@@ -259,7 +250,7 @@ p.meta a:hover {
 }
 .latest,
 .archive {
-    padding: 0 0 3rem;
+    padding: 0 0 1rem;
 }
 .latest p,
 .archive p {
@@ -283,7 +274,7 @@ article {
     font-size: 78px;
     line-height: .75;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
@@ -291,15 +282,14 @@ article {
     /* added to adjust drop-cap between FF and GC */
 }
 .entry p:first-child::first-line {
-    //font-family: "Bedini", "Didot", "Georgia", serif;
-    //font-weight: bold;
+    font-weight: bold;
 }
 blockquote {
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
     padding: .5rem 1rem;
     margin: 2.5rem 0;
     font-size: 1rem;
@@ -311,7 +301,7 @@ blockquote:before {
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     background: #fff;
     //vertical-align: -0.4em;
@@ -325,7 +315,7 @@ blockquote p {
 .post-nav a {
     color: #444;
     font-size: .75rem;
-    font-family: "Bedini", "Didot", "Georgia", serif;
+    font-family: 'Rufina', serif;
     font-weight: bold;
     line-height: 1;
     padding: 0 .25rem;
@@ -344,10 +334,9 @@ blockquote p {
     padding: 2rem;
 }
 .paginate a {
-    padding: 0 .125rem;
+    padding: 0 .0625rem;
     text-decoration: none;
     color: #444;
-    font-family: "Bedini", "Didot", "Georgia", serif;
     font-weight: bold;
 }
 
@@ -364,7 +353,7 @@ footer li,
 .collapse li {
     list-style-type: none;
     margin-bottom: .25rem;
-    font-size: 1rem;
+    font-size: .85rem;
 }
 footer a,
 .collapse a {
@@ -386,6 +375,10 @@ footer a:hover,
 }
 .sidebar-module {
     padding: 0 1rem;
+}
+
+.sidebar-module h4 {
+  font-size: 1.25rem;
 }
 .social {
     padding: 0;

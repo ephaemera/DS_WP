@@ -4,7 +4,7 @@
         <div class="container">
             <div class="entry-header">
                 <div class="row justify-content-sm-center">
-                    <div class="col-sm col-md-9">
+                    <div class="col-sm col-md-6">
                         <!-- https://stackoverflow.com/questions/9058949/wordpress-loop-that-shows-first-post-only -->
                         <?php $my_query = new WP_Query('showposts=1'); ?>
                             <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>

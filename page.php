@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="//jumbotron //jumbotron-fluid page single">
         <div class="container">
             <div class="entry-header">
                 <div class="row justify-content-sm-center">
@@ -37,4 +37,4 @@
 
 
         <div class="container-fluid">
-            <?php get_footer(); ?>
+            <?php get_footer('page'); ?>
