@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <!-- Bootstrap CSS -->
-    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <!-- <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"> -->
     <title>
         <?php bloginfo('name'); ?> |
             <?php is_front_page() ? bloginfo('description') :  wp_title(); ?>
     </title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <?php wp_head(); ?>
 
     <style>
@@ -30,7 +29,8 @@
     </style>
 </head>
 
-<body class=id="top">
+<body <?php body_class(); ?>>
+  <a id="top"></a>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">dS</a>

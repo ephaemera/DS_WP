@@ -64,21 +64,19 @@ h6 a:hover {
 img {
     max-width: 100%;
 }
-.page,
-.page-single {
-    padding-top: 3rem;
-}
+
+
 /* ================== Navigation Styles ==================== */
 
 .navbar {
-    padding: 0 1rem;
+    padding: .25rem 0 0;
 }
 .navbar-toggler {
     border: 0;
 }
 .navbar-brand {
     font-family: 'Dalmais', "Didot", serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     letter-spacing: -5px;
     color: #444;
 }
@@ -107,7 +105,7 @@ img {
     padding-top: 2rem;
 }
 .single .entry-header {
-  padding-top: 6rem;
+  padding: 6rem 0 3rem;
 }
 .entry-header h1 {
     font-size: 4rem;
@@ -207,7 +205,7 @@ p.meta a:hover {
   -o-background-size: cover;
   background-position: center center;
   border-bottom: 1px solid #efefff;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -248,12 +246,10 @@ p.meta a:hover {
 .jumbotron a.read-more:hover {
     color: #b59f5b;
 }
-.latest,
-.archive {
-    padding: 0 0 1rem;
+.latest {
+    padding: 3rem 0 1rem;
 }
-.latest p,
-.archive p {
+.latest p {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -379,6 +375,16 @@ footer a:hover,
 
 .sidebar-module h4 {
   font-size: 1.25rem;
+}
+
+.left-widget .sidebar-module {
+  text-align: right !important;
+}
+.center-widget .sidebar-module {
+  text-align: center !important;
+}
+.right-widget .sidebar-module {
+  text-align: left !important;
 }
 .social {
     padding: 0;

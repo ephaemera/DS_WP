@@ -8,7 +8,7 @@
                         <?php if(have_posts()) :
 
             ?>
-
+                            <p>Archives</p>
                             <h1><?php
 
               if ( is_category() ) {
