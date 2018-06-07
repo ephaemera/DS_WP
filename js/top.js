@@ -1,5 +1,5 @@
 /*!
-  * Script v1.1 
+  * Script v1.1
   */
 
 $(function() {

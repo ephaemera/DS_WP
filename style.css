@@ -378,14 +378,31 @@ footer a:hover,
 }
 
 .left-widget .sidebar-module {
-  text-align: right !important;
+ text-align: left !important;
 }
+
+@media (min-width: 576px) {
+    .left-widget .sidebar-module {
+    text-align: right !important;
+    padding-bottom: 1rem;
+  }
+}
+
 .center-widget .sidebar-module {
-  text-align: center !important;
+ text-align: left !important;
+ padding-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+    .center-widget .sidebar-module {
+    text-align: center !important;
+  }
 }
 .right-widget .sidebar-module {
-  text-align: left !important;
+text-align: left !important;
 }
+
+
 .social {
     padding: 0;
 }
@@ -408,7 +425,7 @@ p.copyright {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .5rem;
-    padding: .5rem 0;
+    padding: 1rem 0 0;
 }
 p.top {
     font-size: 1.5rem;
