@@ -1,19 +1,20 @@
 <?php get_header(); ?>
 
 
-    <div class="//jumbotron //jumbotron-fluid single">
+    <div class="featured single">
 
-        <!--<img src="<?php background_image(); ?>" /> -->
         <div class="container">
             <div class="entry-header">
                 <div class="row justify-content-sm-center">
-                    <div class="col-sm col-md-5">
+                    <div class="col-sm col-md-9">
                         <?php the_category(); ?>
                             <h1><?php the_title(); ?></h1>
+                            <p class="meta">
+                              <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> <!--:: <?php comments_number(); ?> -->
+                            </p>
+                            <?php the_post_thumbnail('small-thumbnail'); ?>
                             <?php the_excerpt(); ?>
-                                <p class="meta">
-                                  <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> <!--:: <?php comments_number(); ?> -->
-                                </p>
+
                     </div>
 
                 </div>

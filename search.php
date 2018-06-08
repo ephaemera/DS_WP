@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="jumbotron jumbotron-fluid archive">
+    <div class="//jumbotron //jumbotron-fluid archive">
         <div class="container">
             <div class="entry-header">
                 <div class="row justify-content-sm-center">
@@ -8,7 +8,7 @@
                         <?php if(have_posts()) :
 
             ?>
-                          
+
                             <h1>Search results for: <?php the_search_query(); ?></h1>
                     </div>
                 </div>

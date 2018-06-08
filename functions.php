@@ -27,7 +27,7 @@
     // Add Featured Image support
     add_theme_support('post-thumbnails');
     add_image_size('small-thumbnail');
-    add_image_size('banner-image', 500, auto, true);
+    add_image_size('banner-image', 3000, 1000, true);
 
     // Set the content width based on the theme's design and stylesheet
     if ( ! isset( $content_width ) ) {
