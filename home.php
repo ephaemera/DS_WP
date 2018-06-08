@@ -10,12 +10,12 @@
                             <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                                 <?php the_category(); ?>
                                     <h1>
-                <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-                <?php the_title(); ?>
-                </a>
-              </h1>
+                                      <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+                                      <?php the_title(); ?>
+                                      </a>
+                                    </h1>
                                     <?php the_excerpt(); ?>
-                                        <p><a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a></p>
+                                        <p><a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fas fa-angle-right"></i></a></p>
                                         <?php wp_reset_postdata(); ?>
                                             <?php endwhile; ?>
                     </div>
@@ -49,6 +49,7 @@
 
                                 <!--  <hr> -->
                                 <div class="row justify-content-center paginate">
+
 
                                     <?php echo paginate_links(); ?>
 

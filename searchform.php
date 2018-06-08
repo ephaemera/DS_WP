@@ -1,3 +1,5 @@
-<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-    <input type="search" class="form-control" placeholder="Search" value="<?php echo get_search_query() ?>" name="s" title="Search" />
+<form action="/" method="get">
+    <label for="search">Search in <?php echo home_url( '/' ); ?></label>
+    <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="<?php the_search_query(); ?>" />
+    <input type="image" alt="Search" src="<?php bloginfo( 'template_url' ); ?>/images/search.png" />
 </form>

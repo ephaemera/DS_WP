@@ -15,7 +15,7 @@
               </a>
             </h1>
                                     <?php the_excerpt(); ?>
-                                        <p><a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a></p>
+                                        <p><a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fas fa-angle-right"></i></a></p>
                                         <?php endwhile; ?>
                     </div>
                 </div>
@@ -64,6 +64,6 @@
         </div>
         <!-- container -->
 
-        <hr>
+        <!--  <hr> -->
 
         <?php get_footer(); ?>
