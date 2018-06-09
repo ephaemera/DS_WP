@@ -10,7 +10,7 @@
                         <?php the_category(); ?>
                             <h1><?php the_title(); ?></h1>
                             <p class="meta">
-                              <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> <!--:: <?php comments_number(); ?> -->
+                              <?php the_time('F j, Y'); ?> by <?php the_author_meta('nickname', 1); ?> in <?php the_tags( '', ', ', '' ); ?> :: <?php comments_number(); ?> 
                             </p>
                             <?php the_post_thumbnail('small-thumbnail'); ?>
                             <?php the_excerpt(); ?>

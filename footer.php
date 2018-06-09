@@ -4,17 +4,17 @@
 
     <div class="container footer-sidebar">
         <div class="row justify-content-sm-center">
-            <div class="col-md col-lg-4 left-widget">
+            <div class="col-md col-lg-3 left-widget">
                 <?php if(is_active_sidebar('sidebar1')): ?>
                     <?php dynamic_sidebar('sidebar1'); ?>
                         <?php endif; ?>
             </div>
-            <div class="col-md col-lg-4 center-widget">
+            <div class="col-md col-lg-3 center-widget">
                 <?php if(is_active_sidebar('sidebar2')): ?>
                     <?php dynamic_sidebar('sidebar2'); ?>
                         <?php endif; ?>
             </div>
-            <div class="col-md col-lg-4 right-widget">
+            <div class="col-md col-lg-3 right-widget">
                 <?php if(is_active_sidebar('sidebar3')): ?>
                     <?php dynamic_sidebar('sidebar3'); ?>
                         <?php endif; ?>

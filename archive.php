@@ -39,7 +39,7 @@
 
 
 
-    <div class="page">
+    <div class="page archive">
 
         <div class="container">
 

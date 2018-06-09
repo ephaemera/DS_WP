@@ -145,7 +145,7 @@
   // Enqueue Google Fonts https://premium.wpmudev.org/blog/custom-google-fonts/
   function google_fonts() {
   	$query_args = array(
-  		'family' => 'Quattrocento+Sans:400,400i,700|Rufina:400,700|Unna:400,700',
+  		'family' => 'Quattrocento+Sans:400,400i,700|Playfair+Display:400,400i,700|Unna:400,700',
   		'subset' => 'latin,latin-text',
   	);
   	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );

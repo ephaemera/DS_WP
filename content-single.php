@@ -1,6 +1,6 @@
 <article class="entry">
   <div class="row justify-content-sm-center">
-    <div class="col-sm col-md-9">
+    <div class="col-sm col-md-9 single-content">
       <?php the_content(); ?>
       <div class="row post-nav">
           <div class="col-sm nav-prev">

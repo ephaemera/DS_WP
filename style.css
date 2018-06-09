@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Unna','Rufina', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     color: #444;
 }
@@ -49,7 +49,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    font-family: 'Unna','Rufina', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     color: #444;
 }
@@ -76,6 +76,7 @@ img {
 
 .navbar {
     padding: .25rem 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .07);
 }
 .navbar-nav {
   margin-bottom: 1rem;
@@ -93,12 +94,24 @@ img {
   color: rgba(255, 255, 255, 1);
   border-color: rgba(255, 255, 255, 1);
 }
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+}
 .navbar-dark .navbar-toggler-icon { /* 4317 bootstrap.css */
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #444;
+}
 .bg-dark {
     background-color: #222 !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+}
+.bg-light {
+  background-color: #fff !important;
 }
 .nav-item {
     text-transform: uppercase;
@@ -122,10 +135,6 @@ img {
 }
 
 .entry-header h1 {
-    font-size: 4rem;
-}
-
-.single .entry-header h1 {
     font-size: 3rem;
 }
 
@@ -133,12 +142,15 @@ img {
   font-weight: bold;
 }
 
-
 .single img, .single .entry-header p {
   padding-bottom: 1rem;
 }
 .single .entry-header-excerpt p {
     font-weight: bold;
+}
+
+.archive .entry-header {
+  padding: 6rem 0;
 }
 
 @media (min-width: 768px) {
@@ -164,7 +176,7 @@ img {
 }
 
 .post-categories a:hover, .single .post-categories a:hover {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
 }
 .page img,
@@ -180,15 +192,13 @@ p.meta {
     font-weight: bold;
     display: inline-block;
 }
-p.meta {
-    //padding-bottom: .25rem;
-}
+
 p.meta a {
   color: #b59f5b;
 }
 
 p.meta a:hover {
-    //color: #333;
+    color: #333;
     text-decoration: none;
 }
 .read-more:hover,
@@ -209,23 +219,9 @@ p.meta a:hover {
   position: relative;
 }
 
-//.jumbotron.single {
-  padding: 6.5rem 0 7.5rem;
-  margin-bottom: 3rem;
-}
-
 
 .jumbotron-fluid.archive {
-  background: url(img/christa-dodoo-485704-unsplash.jpg) no-repeat;
-  padding: 8rem 2rem;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-  border-bottom: 1px solid #efefff;
   margin-bottom: 3rem;
-  position: relative;
 }
 
 .jumbotron:before, .jumbotron-fluid:before {
@@ -244,7 +240,6 @@ p.meta a:hover {
 .jumbotron h1 a {
     color: #fff;
     padding-bottom: .5rem;
-    font-weight: normal;
 }
 .jumbotron h1 a:hover {
     color: #b59f5b;
@@ -291,18 +286,27 @@ article {
     font-size: 91px;
     line-height: .75;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
-    font-family: 'Unna','Rufina', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
     margin-top: 3px;
     /* added to adjust drop-cap between FF and GC */
 }
-.entry p:first-child::first-line {
-    //font-weight: bold;
+.single-content>p:first-child:first-letter {
+  float: left;
+  font-size: 76px;
+  line-height: .6;
+  /* Reduced from lh=1 to adjust drop-cap between FF and GC */
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  padding-right: 6px;
+  margin-bottom: -6px;
+  margin-top: 11px;
+  /* added to adjust drop-cap between FF and GC */
 }
 blockquote {
-    font-family: 'Unna','Rufina', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     text-align: center;
     border-top: 1px dotted #ddd;
@@ -318,7 +322,7 @@ blockquote:before {
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
-    font-family: 'Unna','Rufina', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     background: #fff;
     //vertical-align: -0.4em;
@@ -351,9 +355,6 @@ blockquote p {
 }
 .nav-prev {
 text-align: center;
-}
-.nav-prev:before {
-
 }
 .nav-next {
 text-align: center;
@@ -433,7 +434,7 @@ footer a:hover,
 
 @media (min-width: 768px) {
     .left-widget {
-    text-align: right !important;
+    //text-align: right !important;
   }
 }
 
@@ -449,6 +450,11 @@ footer a:hover,
 }
 .right-widget {
 text-align: left !important;
+}
+@media (min-width: 768px) {
+    .right-widget {
+    text-align: right !important;
+  }
 }
 
 
