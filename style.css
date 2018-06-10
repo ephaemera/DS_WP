@@ -150,7 +150,7 @@ img {
 }
 
 .archive .entry-header {
-  padding: 6rem 0;
+  padding: 6.0625rem 0;
 }
 
 @media (min-width: 768px) {
@@ -331,7 +331,8 @@ blockquote p {
     margin-top: -1.25rem;
 }
 .post-nav {
-    padding: 1.5rem 0;
+    //padding: 2rem 0 1.5rem;
+    display: none;
 
 }
 
@@ -339,32 +340,42 @@ blockquote p {
   text-align: center;
 }
 
-.post-nav a {
-    color: #444;
+//.post-nav a {
+    color: #fff;
     font-size: 1rem;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
     line-height: 1;
-    padding: .25rem;
+    //padding: .25rem;
     display: inline-block;
     //text-transform: uppercase;
 }
-.post-nav a:hover {
+//.post-nav a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
-.nav-prev {
+//.nav-prev {
 text-align: center;
+background: #444;
 }
-.nav-next {
+//.nav-next {
 text-align: center;
+background: #444;
 }
-
-@media (min-width: 576px) {
+//.nav-prev, .nav-next {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+@media (max-width: 576px) {
   .nav-prev {
+    //border-bottom: 1px dotted #999;
+  }
+}
+@media (min-width: 576px) {
+  //.nav-prev {
   text-align: left;
   }
-  .nav-next {
+  //.nav-next {
   text-align: right;
   }
 }
@@ -372,11 +383,7 @@ text-align: center;
 .comment-form-comment {
     width: 100%;
 }
-.paginate {
-    border-top: 1px dotted #ddd;
-    border-bottom: 1px dotted #ddd;
-    padding: 2rem;
-}
+
 .paginate a {
     padding: 0 .0625rem;
     text-decoration: none;
@@ -417,11 +424,6 @@ footer a:hover,
 .footer-sidebar {
     padding: 4rem 4rem 3rem;
 }
-@media (min-width: 768px) {
-.sidebar-module {
-    padding: 0 1rem;
-  }
-}
 
 .sidebar-module h4 {
   font-size: 1.25rem;
@@ -432,11 +434,6 @@ footer a:hover,
  padding-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-    .left-widget {
-    //text-align: right !important;
-  }
-}
 
 .center-widget  {
  text-align: left !important;
@@ -456,7 +453,6 @@ text-align: left !important;
     text-align: right !important;
   }
 }
-
 
 .social {
     padding: 0 0 .75rem;
@@ -507,10 +503,15 @@ p.top a {
 .comments .reply a {
     color: #b59f5b;
 }
+
+.comment-reply-title {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.5rem;
+}
 .form-submit .submit {
     text-transform: uppercase;
     padding: 5px 0;
-    border-color: #ddd;
+    border: 0;
 }
 input[type="submit" i] {
     background-color: #444;
@@ -520,4 +521,50 @@ input[type="submit" i] {
 }
 input[type="submit" i]:hover {
     color: #b59f5b;
+}
+
+/* ============== Plugin Styling ================== */
+
+/*  Related Posts Plugin Default CSS
+
+.rp4wp-related-posts ul{width:100%;padding:0;margin:0;float:left;}
+.rp4wp-related-posts ul>li{list-style:none;padding:0;margin:0;padding-bottom:20px;clear:both;}
+.rp4wp-related-posts ul>li>p{margin:0;padding:0;}
+.rp4wp-related-post-image{width:35%;padding-right:25px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;float:left;}
+*/
+
+
+.rp4wp-related-posts h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.rp4wp-related-posts ul>li{
+  list-style:none;
+  padding:0 0 20px;
+  margin:0;
+  clear:both;
+}
+.rp4wp-related-post-content {
+  width: 65%;
+}
+.rp4wp-related-post-content a {
+  color: #444;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.rp4wp-related-post-content a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+.rp4wp-related-post-image{
+  width:25%;
+  padding-right:25px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+ }
 }
